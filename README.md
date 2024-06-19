@@ -1,6 +1,6 @@
 # Test Tinybird
 
-This is a test project for Tinybird
+This is a test project for Tinybird application [demo](https://javicodx.github.io/tiny-chart/)
 
 ## Description
 
