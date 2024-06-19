@@ -23,6 +23,7 @@ Some of the thing I would expand on:
 - Test other frameworks
 - Custom style
 - Resize the charts to make them responsive with ResizeObserver
+- Use a token for the query sql
 
 ### npx
 
