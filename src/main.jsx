@@ -9,10 +9,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <Theme>
       <App />
-      <Box maxWidth="300px">
-        <Progress />
-      </Box>
-      <ThemePanel />
     </Theme>
   </React.StrictMode>,
 )

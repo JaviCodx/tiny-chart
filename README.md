@@ -1,30 +1,31 @@
-# React + TypeScript + Vite
+# Test Tinybird
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a test project for Tinybird
 
-Currently, two official plugins are available:
+## Description
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+I first did check the implementation of the charts that you recently announced and check the docs, the implementation is pretty neat and good looking
+so I have decided to expand on the same charts library but from another perspective, instead of a wrap with React I think it would be better to make web components since they can be used in all major [browsers](https://caniuse.com/custom-elementsv1) and [frameworks](https://custom-elements-everywhere.com/)
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Going forward
 
-- Configure the top-level `parserOptions` property like this:
+Some of the thing I would expand on:
+- Bundle the widget lib with rollup and upload it to npm for public use
+- Treeshake echarts, it is preatty heavy
+- Types
+- Improve testing, it is basic
+- Test other frameworks
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+
+### npx
+
+```sh
+npm run dev
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+to the test
+
+```sh
+npm run tes
+```
