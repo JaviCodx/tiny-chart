@@ -11,7 +11,7 @@
     "test": "wtr",
     "preview": "vite preview",
     "predeploy" : "npm run build",
-    "deploy" : "gh-pages -d build"
+    "deploy" : "gh-pages -d dist"
   },
   "dependencies": {
     "@lit/task": "^1.0.1",
