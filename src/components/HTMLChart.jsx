@@ -28,9 +28,9 @@ function HTMLChart() {
             FROM
               _
             GROUP BY
-              payment_type "
-            xAxisCol=" payment_type_description "
-            yAxisCol=" payment_type_count"
+              payment_type"
+            xAxisCol="payment_type_description"
+            yAxisCol="payment_type_count"
           />`,
         }}
       ></div>
