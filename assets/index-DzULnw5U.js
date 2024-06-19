@@ -297,9 +297,9 @@ PERFORMANCE OF THIS SOFTWARE.
             FROM
               _
             GROUP BY
-              payment_type "
-            xAxisCol=" payment_type_description "
-            yAxisCol=" payment_type_count"
+              payment_type"
+            xAxisCol="payment_type_description"
+            yAxisCol="payment_type_count"
           />`}})]})}const zn={HOURLY:"HOURLY",DAILY:"DAILY",WEEKLY:"WEEKLY",MONTHLY:"MONTHLY"},pX={[zn.HOURLY]:{aggregateFunc:"toHour",aggregatedName:"pickup_hour"},[zn.DAILY]:{aggregateFunc:"toDayOfYear",aggregatedName:"pickup_day"},[zn.WEEKLY]:{aggregateFunc:"toWeek",aggregatedName:"pickup_week"},[zn.MONTHLY]:{aggregateFunc:"toMonth",aggregatedName:"pickup_month"}};function INe(s){const{aggregateFunc:l,aggregatedName:d}=pX[s];return{xAxisCol:d,q:`SELECT
     ${l}(tpep_pickup_datetime) AS ${d},
     COUNT(*) AS trip_count
